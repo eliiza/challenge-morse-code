@@ -9,7 +9,7 @@ In this challenge you're given data containing some old news headlines encoded i
 Because the data is streaming through a Kafka topic, the challenge consists in tapping onto that topic, decoding the headlines and extracting from the **first 1000 records** the ones that contain the word `australia`.  We are only interested in the headlines with **australia**, **NOT** ~~australian~~ or ~~australians~~.  Save your extraction into an output text file with one headline per line, decoded back to English.
 
 Some relevant info here:
-- In morse code there is no distinction between lower/upper case.
+- In Morse Code there is no distinction between lower/upper case.
 - Kafka records in the topic are in plain text format:
   - keys are sequencial, starting in 1;
   - values are encoded in Morse Code.
