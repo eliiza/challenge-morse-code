@@ -15,12 +15,15 @@ Some relevant info here:
   - values are encoded in Morse Code.
 - The Morse Code is written in traditional notation:
   - dots and dashes with characters separated by a blank and words separated by a slash,
-  - *e.g.* a headline like `Kafka is great` would be `-.- .- ..-. -.- .-/.. .../--. .-. . .- -`.
+  - *e.g.* a news headline like `Kafka is great` would be `-.- .- ..-. -.- .-/.. .../--. .-. . .- -`.
   
 ## How to solve the challenge
 
 For this challenge you can use any language you like.  You will most probably use a Scala, Python, Java or JavaScript (Node.js) Kafka client; we have no preference at all.  We provide a `docker-compose.yml` file containing:
-- images with a Kafka environment (ZooKeeper and 1 Kafka broker),
+- images with a Kafka environment (ZooKeeper and 1 Kafka broker) like this:
+  - bootstrap server: `localhost:9092`
+  - security protocol: `PLAINTEXT`
+  - topic name: `au.com.eliiza.newsheadlines.txt`
 - our service that encodes news headlines in international Morse Code, and
 - an API that is capable of translating **one** (1) encoded character at a time, *e.g.*:
   - GET http://localhost:8083/kafka-coding-challenge/translate?morse-code=-.- should respond `k`.
