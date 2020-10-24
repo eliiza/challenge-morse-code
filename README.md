@@ -33,6 +33,6 @@ First of all, install [Docker Compose](https://docs.docker.com/compose/install/)
     $ cd myrepo
     $ docker-compose up
     
-After all the images are downloaded and Kafka is up and running, you should start seeing our service logging the production of news headlines records and servicing the translation of morse code characters.  Once you solve the challenge, send us back your code and your output file.
+After all the images are downloaded and Kafka is up and running, you should start seeing our service logging the production of news headlines records and serving the translation of morse code characters.  Once you solve the challenge, send us back your code and your output file.
 
 Good luck!!!
