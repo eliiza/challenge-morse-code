@@ -11,7 +11,7 @@ Because the data is streaming through a Kafka topic, the challenge consists in t
 Some relevant info here:
 - In Morse Code there is no distinction between lower/upper case.
 - Kafka records in the topic are in plain text format:
-  - keys are sequencial, starting in 1;
+  - keys are sequencial, starting at 1;
   - values are encoded in Morse Code.
 - The Morse Code is written in traditional notation:
   - dots and dashes with characters separated by a blank and words separated by a slash,
