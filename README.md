@@ -28,7 +28,7 @@ For this challenge you can use any language you like.  You will most probably us
 - an API that is capable of translating **one** (1) encoded character at a time, *e.g.*:
   - GET http://localhost:8083/kafka-coding-challenge/translate?morse-code=-.- should respond `k`.
 
-## Starting Kafka with docker-compose
+## Starting Kafka environment with docker-compose
 
 First of all, install [Docker Compose](https://docs.docker.com/compose/install/) for your system, if you don't already have it.  Then:
 
